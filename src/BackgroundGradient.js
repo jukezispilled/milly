@@ -58,7 +58,7 @@ export const BackgroundGradient = ({
         className="absolute top-3 left-5 md:top-7 md:left-10 text-6xl md:text-7xl font-custom"
         style={{ zIndex: 30 }}
       >
-        $milly
+        $chilly
       </motion.div>
       <motion.a
         href="/"
