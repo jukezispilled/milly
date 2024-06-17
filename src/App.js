@@ -9,6 +9,7 @@ import meme3 from "./meme3.webp";
 import meme4 from "./meme4.webp";
 import meme5 from "./meme5.webp";
 import meme6 from "./meme6.webp";
+import './App.css'; // Make sure to import your CSS file
 
 function App() {
   const [copied, setCopied] = useState(false);
@@ -36,51 +37,57 @@ function App() {
   };
 
   return (
-    <div>
-      <div className="h-screen w-screen bg-white flex flex-col justify-center items-center overflow-x-clip relative">
-        <BackgroundGradient>
-          <div
-            className="h-[250px] w-[250px] md:h-[55vh] md:w-[55vh] bg-zinc-950 rounded-3xl"
-            style={{
-              backgroundImage: "url(/uni.jpg)",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          ></div>
-        </BackgroundGradient>
-        {/* Large screen social media links */}
-        <div className="absolute bottom-10 right-10 flex flex-row z-30 hidden md:flex">
+    <div
+      className="h-screen w-screen flex flex-col justify-center items-center overflow-x-clip relative bg-cover" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/m.jpg'})` }}>
+      <BackgroundGradient>
+        <div
+          className="h-[250px] w-[250px] md:h-[55vh] md:w-[55vh] bg-zinc-950 rounded-3xl"
+          style={{
+            backgroundImage: "url('/milly.png')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        ></div>
+      </BackgroundGradient>
+      {/* Large screen social media links */}
+      <div className="absolute bottom-10 right-10 flex flex-row z-30 hidden md:flex">
+        <a
+          href="https://x.com/millycto"
+          className="p-2 hover:scale-110 transition ease-in-out duration-200"
+        >
+          <img src={Xlogo} alt="Xlogo" className="w-10 h-10 rounded-md" />
+        </a>
+        <a
+          href="https://t.me/+kGqaEsN_xmkxMjM0"
+          className="p-2 hover:scale-110 transition ease-in-out duration-200"
+        >
+          <img src={TG} alt="Tg logo" className="w-10 h-10" />
+        </a>
+      </div>
+      {/* Small screen social media links */}
+      <div className="absolute top-5 left-5 flex flex-col items-center md:hidden">
+        <div className="flex flex-row">
           <a
-            href="https://x.com/UniOnSolana_"
+            href="https://x.com/millycto"
             className="p-2 hover:scale-110 transition ease-in-out duration-200"
           >
             <img src={Xlogo} alt="Xlogo" className="w-10 h-10 rounded-md" />
           </a>
           <a
-            href="https://t.me/+4wYgSOXjmFxiNDUx/"
+            href="https://t.me/+kGqaEsN_xmkxMjM0"
             className="p-2 hover:scale-110 transition ease-in-out duration-200"
           >
             <img src={TG} alt="Tg logo" className="w-10 h-10" />
           </a>
         </div>
-        {/* Small screen social media links */}
-        <div className="absolute top-5 left-5 flex flex-col items-center md:hidden">
-          <div className="flex flex-row">
-            <a
-              href="https://x.com/UniOnSolana_"
-              className="p-2 hover:scale-110 transition ease-in-out duration-200"
-            >
-              <img src={Xlogo} alt="Xlogo" className="w-10 h-10 rounded-md" />
-            </a>
-            <a
-              href="https://t.me/+4wYgSOXjmFxiNDUx/"
-              className="p-2 hover:scale-110 transition ease-in-out duration-200"
-            >
-              <img src={TG} alt="Tg logo" className="w-10 h-10" />
-            </a>
-          </div>
-        </div>
       </div>
+    </div>
+  );
+}
+
+export default App;
+
+/*
       <div className='w-screen bg-[#F6D10A]'>
         <div className='h-min w-screen flex justify-center pb-[10%]'>
           <div className='grid w-full'>
@@ -150,8 +157,4 @@ function App() {
           </div>
         </div>
       </div>
-    </div>
-  );
-}
-
-export default App;
+      */
