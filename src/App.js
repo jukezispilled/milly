@@ -38,12 +38,12 @@ function App() {
 
   return (
     <div
-      className="h-screen w-screen flex flex-col justify-center items-center overflow-x-clip relative bg-cover" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/m.jpg'})` }}>
+      className="h-screen w-screen flex flex-col justify-center items-center overflow-x-clip relative bg-cover" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/bg.jpg'})` }}>
       <BackgroundGradient>
         <div
           className="h-[250px] w-[250px] md:h-[55vh] md:w-[55vh] bg-zinc-950 rounded-3xl"
           style={{
-            backgroundImage: "url('/milly.png')",
+            backgroundImage: "url('/chilly.png')",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
