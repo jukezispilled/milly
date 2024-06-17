@@ -61,7 +61,7 @@ export const BackgroundGradient = ({
         $milly
       </motion.div>
       <motion.a
-        href="https://dexscreener.com/solana/7y2wswtj9c8mowyjdvzhru59ac6ouzsugbtiekxcrvvh"
+        href="https://dexscreener.com/solana/ArCg9ZdfRVJAyVqibnKSUJtgkPstDdv7JoH7V6D9B6qm"
         className="absolute bottom-[18px] right-5 md:bottom-9 md:right-10 md:hover:scale-105 transition ease-in-out duration-200 text-4xl md:text-6xl bg-[#36cb34] px-4 py-2 rounded-md font-custom"
         style={{ zIndex: 30 }}
       >
